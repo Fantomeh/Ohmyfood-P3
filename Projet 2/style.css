@@ -1,27 +1,24 @@
 * {
-
     box-sizing: border-box;
 }
 
-/***Loader********************************************************************
+
 
 
 .loader {
     width: 100%;
     height: 100%;
     z-index: 10;
-    animation: custom-loader 5s forwards;
+    animation: custom-loader 3s forwards;
     position: fixed;
     background-color: rgba(0, 0, 0, .5);
     pointer-events: none;
     top: 0;
-    right: 0;
     left: 0;
-    right: 0;
+    display: flex;
     align-items: center;
     justify-content: center;
-    display: flex;
-    transition: 2s;
+    
 }
 
 @keyframes custom-loader {
@@ -102,7 +99,7 @@
     }
   }
 
-/**Loader********************************************************************/
+
 
 body {
     margin: 0;
@@ -327,7 +324,7 @@ body {
 .coeur-animated {
 
     position: absolute;
-    display: flex;
+    
     height: 0%;
     overflow: hidden;
     bottom: 0;
@@ -347,9 +344,9 @@ body {
 .coeur-full {
     position: absolute;
     bottom: 0;
-    background: linear-gradient(90deg, rgba(158, 82, 179, 1) 86%, rgba(182, 79, 161, 1) 89%);
+    background: linear-gradient(0deg, rgb(82, 84, 179) 0%, rgb(182, 79, 161) 100%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: transparent;
 }
 
 .new {
@@ -458,7 +455,7 @@ body {
 .menu {
     animation: slideup 1s forwards;
     opacity: 0;
-    animation-delay: calc(2s / 5);
+    animation-delay: 200ms;
 
 }
 
@@ -489,7 +486,6 @@ body {
 .plat {
     animation: slideup 1s forwards;
     opacity: 0;
-
     background-color: white;
     border-radius: 20px;
     margin: 1.5rem;
@@ -568,9 +564,8 @@ body {
 }
 
 .lien-menu:hover .fa-check-circle {
-    overflow: hidden;
+    
     transition-duration: 0.8s;
-    transition-property: transform;
     transform: rotate(360deg);
 
 }
@@ -591,7 +586,7 @@ body {
 
 /**MEDIA DESKTOP**********************************************************/
 
-@media (min-width: 585px) and (max-width:771px) {
+@media (min-width: 585px)  {
 
     body {
         background-color: #0c6b50;
@@ -614,7 +609,6 @@ body {
         display: flex;
         justify-content: space-between;
         flex-direction: column-reverse;
-
     }
 
     .liste-explication {
@@ -630,12 +624,36 @@ body {
         display: flex;
         font-size: 3rem;
         font-family: shrikhand, cursive;
-       
+        
     }
+
+    .text-logo-desktop:hover{
+        animation: bg-color 2s infinite;
+    }
+
+    @keyframes bg-color {
+  0% { color: #e74c3c; }
+  20% { color: #f1c40f; }
+  40% { color: #1abc9c; }
+  60% { color: #3498db; }
+  80% { color: #9b59b6; }
+  100% { color: #e74c3c; }
+}
 
     .effet-explication {
         font-size: 0.8rem;
-
     }
+
+}
+
+/******************************************/
+
+@media (min-width:771px){
+
+    body{
+        background-color: yellow;
+    }
+        
+
 
 }
