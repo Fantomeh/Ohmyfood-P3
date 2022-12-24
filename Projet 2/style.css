@@ -203,6 +203,8 @@ body {
     text-decoration: none;
     font-weight: 500;
     font-size: 1.1rem;
+    padding: 1.5rem;
+    
 }
 
 .fonctionnement {
@@ -220,6 +222,8 @@ body {
     margin-bottom: 3rem;
 }
 
+
+
 .effet-explication {
     border-radius: 30px 30px 30px 30px;
     font-family: "Raleway";
@@ -227,19 +231,35 @@ body {
     padding: 1.5rem;
     border: solid;
     display: inline-flex;
-    border-color: #f6f6f6;
-    background-color: #f6f6f6;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     font-size: 1rem;
     margin: 12px;
     text-decoration: none;
-    color: black;
     position: relative;
     align-items: center;
-    justify-content: center;
+    
 }
 
+.couleur-effet-default{
+    background-color: #f6f6f6;
+    color: black;
+    border-color: #f6f6f6;
+}
 
+.couleur-effet-explication{
+    border-color: #F5EDFF;
+    color: #9356DC;
+    background-color: #F5EDFF;
+}
+
+.color-text-explication{
+    display: inline-block;
+    color: black;
+}
+
+.icone-placement{
+    margin-right:14px;
+}
 
 .liste-numero {
     background: #9356dc;
@@ -256,14 +276,17 @@ body {
 }
 
 .icone-fonctionnement {
-    position: absolute;
-    left: 10px;
+   
+}
+
+.logo-desktop{
+    display: none;
 }
 
 .restaurants-et-menu {
     display: flex;
     flex-direction: column;
-    background-color: #D9D9D9;
+    background-color: #f6f6f6;
 }
 
 .titre-rangement-restaurants {}
@@ -322,9 +345,7 @@ body {
 .coeur-empty {}
 
 .coeur-animated {
-
     position: absolute;
-    
     height: 0%;
     overflow: hidden;
     bottom: 0;
@@ -335,7 +356,6 @@ body {
 
 
 .coeur:hover .coeur-animated {
-
 
     height: 100%;
     transition: 1s
@@ -402,6 +422,8 @@ body {
 
 .image-header-page2 {
     height: 22rem;
+    height: 100%;
+    width: 100%;
 }
 
 .retour {
@@ -416,10 +438,19 @@ body {
 .restaurants-et-menu-page-2 {
     display: flex;
     flex-direction: column;
-    background-color: #D9D9D9;
+    background-color: #f6f6f6;
     border-radius: 30px 30px 0 0;
     margin-top: -55px;
     position: relative;
+}
+
+.nom-restaurant-page2{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10%;
+    margin-left: 8%;
+    margin-top: 15px;
+    font-family: shrikhand, cursive;
 }
 
 .titre-rangement-menu {
@@ -599,11 +630,11 @@ body {
         margin-right: auto;
     }
 
-    .logo {
-        display: none;
-    }
+   
 
-    .liste-explication {}
+    .liste-explication {
+        justify-content: space-between;
+    }
 
     .rangement-fonctionnement-desktop {
         display: flex;
@@ -642,8 +673,10 @@ body {
 
     .effet-explication {
         font-size: 0.8rem;
+        width: 100%;
     }
 
+  
 }
 
 /******************************************/
@@ -653,7 +686,31 @@ body {
     body{
         background-color: yellow;
     }
+
+    .rangement-restaurants{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    
+    /**page 2**/
+
+
+
+    .rangemement-desktop-responsiv{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
         
+    
+    .rangemement-desktop-plat{
+        width: 50%;
+    }
+
+
 
 
 }
