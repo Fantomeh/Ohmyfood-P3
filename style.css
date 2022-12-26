@@ -138,6 +138,16 @@ body {
 
 }
 
+.input-localisation {
+    width: 80%;
+    background-color: #eaeaea;
+    border: none;
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: bold;
+    outline: none;
+  }
+
 .info-header {
     display: flex;
     flex-direction: column;
@@ -212,7 +222,7 @@ body {
 
 .effet-explication {
     border-radius: 30px 30px 30px 30px;
-    font-family: "Raleway";
+    font-family: Roboto, sans-serif;
     font-weight: bold;
     padding: 1.5rem;
     border: solid;
@@ -381,24 +391,35 @@ body {
 .site-footer {
     display: flex;
     flex-direction: column;
-    background-color: black;
+    background-color: #353535;
 
 }
 
 .titre-footer {
     color: white;
-    font-family: shrikhand;
-    margin-left: 15px;
+    font-family: shrikhand, cursive;
+    margin-left: 22px;
 }
 
 .lien-footer {
     color: white;
     text-decoration: none;
-    margin: 0.19rem;
-    margin-left: 15px;
+    margin-left: 22px;
+    margin-bottom: 7px;
 
 }
 
+.icone-footer-one{
+    display: inline-block;
+    margin-right: 13px;
+    
+}
+
+.icone-footer-two{
+    display: inline-block;
+    margin-right: 11px;
+    font-size: 0.8rem;
+}
 
 /**PAGE 2!******************************************************************************/
 
@@ -643,47 +664,7 @@ body {
         flex-direction: row;
     }
 
-    .logo-desktop {
-        display: flex;
-        justify-content: center;
-    }
-
-    .text-logo-desktop {
-        display: flex;
-        font-size: 3rem;
-        font-family: shrikhand, cursive;
-
-    }
-
-    .text-logo-desktop:hover {
-        animation: bg-color 2s infinite;
-    }
-
-    @keyframes bg-color {
-        0% {
-            color: #e74c3c;
-        }
-
-        20% {
-            color: #f1c40f;
-        }
-
-        40% {
-            color: #1abc9c;
-        }
-
-        60% {
-            color: #3498db;
-        }
-
-        80% {
-            color: #9b59b6;
-        }
-
-        100% {
-            color: #e74c3c;
-        }
-    }
+   
 
     .effet-explication {
         font-size: 0.8rem;
