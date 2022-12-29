@@ -245,6 +245,13 @@ body {
 }
 
 .couleur-effet-explication {
+    background-color: #f6f6f6;
+    color: black;
+    border-color: #f6f6f6;
+    
+}
+
+.couleur-effet-explication:hover {
     border-color: #F5EDFF;
     color: #9356DC;
     background-color: #F5EDFF;
@@ -282,6 +289,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #f6f6f6;
+    align-items: center;
 }
 
 .titre-rangement-restaurants {
@@ -290,6 +298,7 @@ body {
     font-weight: bold;
     margin-top: 50px;
     margin-left: 25px;
+    margin-right: auto;
 }
 
 .restaurants {
@@ -299,6 +308,7 @@ body {
     border-radius: 20px;
     margin: 1.5rem;
     position: relative;
+    max-width: 402px;
 }
 
 .lien-restaurants {
@@ -678,9 +688,10 @@ body {
         object-fit: cover;
         height: 100%;
         max-width: 1400px;
-        max-height: 930px;
+        
     }
 
+   
 }
 
 /******************************************/
