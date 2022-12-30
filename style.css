@@ -244,14 +244,9 @@ body {
     
 }
 
-.couleur-effet-explication {
-    background-color: #f6f6f6;
-    color: black;
-    border-color: #f6f6f6;
-    
-}
 
-.couleur-effet-explication:hover {
+
+.couleur-effet-default:hover {
     border-color: #F5EDFF;
     color: #9356DC;
     background-color: #F5EDFF;
