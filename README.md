@@ -23,4 +23,4 @@ Les compétences évaluées dans le cadre de ce projet étaient les suivantes :
 
 En résumé, j'ai réussi à dynamiser une page web avec des animations CSS pour le projet d'Ohmyfood!, en respectant les exigences du CTO et les maquettes de l'UX designer. J'ai utilisé GitHub pour versionner mon code et j'ai réalisé les livrables attendus pour la soutenance.
 
-Pour tester le projet, vous pouvez accéder au site web en utilisant le lien suivant : https://fantomeh.github.io/ohmyfood/index.html
+Pour tester le projet, vous pouvez accéder au site web en utilisant le lien suivant : [https://fantomeh.github.io/ohmyfood/index.html](https://fantomeh.github.io/Ohmyfood-P3/)https://fantomeh.github.io/Ohmyfood-P3/
